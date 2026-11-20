@@ -1,0 +1,12 @@
+{
+  "name": "ima-local",
+  "interface": { "displayName": "我的知识库插件" },
+  "plugins": [
+    {
+      "name": "ima-knowledge",
+      "source": { "source": "local", "path": "./plugins/ima-knowledge" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_USE" },
+      "category": "Productivity"
+    }
+  ]
+}

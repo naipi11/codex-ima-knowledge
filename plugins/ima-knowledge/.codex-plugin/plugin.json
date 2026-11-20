@@ -1,0 +1,18 @@
+{
+  "name": "ima-knowledge",
+  "version": "1.0.1",
+  "description": "在 Codex 中访问个人账号可见的腾讯 ima 知识库。",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "腾讯 ima 知识库",
+    "shortDescription": "浏览知识库、搜索资料并阅读原文",
+    "longDescription": "连接你自己的 ima 账号，按名称找到知识库，浏览文件夹，按关键词检索资料，并阅读接口允许获取的文本。",
+    "developerName": "本地自建插件",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "brandColor": "#167C74",
+    "defaultPrompt": ["列出我的 ima 知识库。", "在我的 ima 知识库中搜索桥梁检测资料，注明资料标题。"]
+  }
+}
