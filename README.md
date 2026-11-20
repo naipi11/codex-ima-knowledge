@@ -1,17 +1,10 @@
 # 在 Codex 中使用 ima 知识库
 
-这是一个供个人使用的 Windows 插件市场。安装“腾讯 ima 知识库”后，可以在本地 Codex 聊天中列出知识库、浏览文件夹、搜索资料，以及按权限读取笔记、文本型 PDF、DOCX、TXT 和 Markdown。
+这是一个公开的第三方 Codex 插件市场，适用于 Windows。安装“腾讯 ima 知识库”并连接自己的 ima 账号后，可以在本地 Codex 聊天中列出知识库、浏览文件夹、搜索资料，以及按权限读取笔记、文本型 PDF、DOCX、TXT 和 Markdown。
 
 ## 在新电脑上安装
 
-准备支持插件市场的 Codex 桌面客户端及命令行、Git 和 uv。首次运行会通过 uv 准备 Python 与锁定的依赖，需要网络连接。此仓库为私有，Git 需要使用有仓库读取权限的 GitHub 账号。如果新电脑使用 GitHub CLI 管理登录，在 PowerShell 中运行：
-
-```powershell
-gh auth login --hostname github.com --git-protocol https
-gh auth setup-git
-```
-
-每台电脑只需添加一次市场来源：
+准备支持插件市场的 Codex 桌面客户端及命令行、Git 和 uv。首次运行时，uv 会联网准备 Python 环境和依赖。任何人都可以在 PowerShell 中运行以下命令添加公开市场，每台电脑只需添加一次。
 
 ```powershell
 codex plugin marketplace add https://github.com/naipi11/codex-ima-knowledge.git
